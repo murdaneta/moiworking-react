@@ -9,8 +9,9 @@ jobs:
     runs-on: ubuntu-lastest
     steps:
       - uses: actions/checkout@master
-      - run: npm install
-      - run: npm run build
+      - run: | 
+          npm install
+          npm run build
       - uses: jakejarvis/s3-sync-action@master
         - with:
           args: --acl public-read --follow-symlinks --delete
