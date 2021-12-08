@@ -2,7 +2,7 @@ name: Subir pagina a S3
 
 on:
   push:
-    branchs:
+    branches:
       - master
 
 jobs:
