@@ -28,7 +28,7 @@ export default class Banner extends Component {
                                         <br/>
                                         desarrollador
                                         <br/>
-                                        web!
+                                        web
                                     </h1>
                                 </div>
                                 <div className="col-md-12">
