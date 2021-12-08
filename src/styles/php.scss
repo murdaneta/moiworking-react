@@ -1,0 +1,15 @@
+$colorPhp:#556593;
+.bg-php{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $colorPhp;
+    & svg {
+        width:150px;
+        height:150px;
+    }
+    & path{
+        fill: white;
+        filter: drop-shadow(2px 3px 1px black);
+    }
+}

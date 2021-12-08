@@ -1,0 +1,30 @@
+.name-initials{
+	width: 100px;
+	display: block;
+	text-align: center;
+	background: black;
+	color: white;
+	margin:auto;
+	& > small{
+		font-size: 12px;
+	}
+}
+.name-mr-1{
+	margin-left: 13%;
+}
+.name-mr-2{
+	margin-left: 34%;
+}
+.name-mr-3{
+	margin-left: 54%;
+}
+.name-mr-4{
+	margin-left: 74%;
+}
+.about-me-bg{
+    background: rgba(0, 0, 0, 0) url("/public/assets/img/pexels-photo-2230796.jpeg") no-repeat scroll 50% 50%;
+	background-size: auto 100%;
+	background-color:black;
+	//color: $amarillo-intenso;
+    //font-size: 12px !important;
+}

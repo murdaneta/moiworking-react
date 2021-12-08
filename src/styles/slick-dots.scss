@@ -1,0 +1,64 @@
+.slick-dots {
+    bottom: 60px !important; 
+    & li.slick-active button {
+		opacity: 1;
+		color: $amarillo;
+		border-radius: 50%;
+		border: 0.5px solid #ffa50087;//$amarillo;
+		padding: 0px;
+		webkit-box-shadow: 0px 0px 5px 0px rgba(255,212,45,1);
+		-moz-box-shadow: 0px 0px 5px 0px rgba(255,212,45,1);
+		box-shadow: 0px 0px 5px 0px rgba(255,212,45,1);
+	}
+	& li button::before {
+		line-height: 17px;
+		color:$amarillo;
+		font-size: 10px;
+		line-height: 19px;
+		border: 0.5px solid #fff0;
+		z-index: 1;
+		content: '';
+		background: $amarillo;
+		width: 10px;
+		height: 10px;
+		margin: 5px;
+		border-radius: 50%;
+	}
+}
+.banner{
+	& .slick-next, & .slick-prev{
+	    //right: 0rem !important;
+	    min-height: 2rem;
+	    min-width: 2rem;
+	    background-color:$amarillo;
+	    box-shadow: 0px 1px 3px -1px #000000bf;
+	    
+	}
+	& .slick-prev:hover, & .slick-prev:focus, & .slick-next:hover, & .slick-next:focus{
+		background-color:$amarillo;
+	}
+	& .slick-next {
+		
+		border-radius: 50% 0% 0% 50%;
+	}
+	& .slick-prev {
+		border-radius: 0% 50% 50% 0%;
+	}
+	& .slick-prev::before, & .slick-next::before{
+	    color:white !important;
+	    opacity: 1;
+	}
+}
+
+// [4:49 p. m., 17/6/2020] Yoma: BANCO SANTANDER
+
+// CUENTA CTE
+
+// 73198968
+
+// GRUPO ARTE FULL
+
+// 76.718.518-9
+
+// grupoartefull@gmail.com
+// [4:49 p. m., 17/6/2020] Yoma: $ 5500

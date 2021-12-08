@@ -1,0 +1,59 @@
+.triangle {
+	position:relative;
+	&-rb::before {
+		bottom:-1%;
+		right: 0%;
+		margin-left: -16px;
+		content:'';
+		display:inline-block;
+		position: absolute;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 8rem 8rem 0 0;
+		border-color: transparent black transparent;
+		z-index: 5;
+	}
+	&-lt:after {
+		top:0%;
+		left: 0%;
+		content:'';
+		display:inline-block;
+		position: absolute;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 8rem 8rem 0 0;
+		border-color: black transparent transparent transparent;
+		z-index: 5;
+	}
+	&-rt::before {
+		top:0%;
+		right: 0%;
+		content:'';
+		display:inline-block;
+		position: absolute;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 8rem 8rem 0;
+		border-color: transparent black transparent;
+		z-index: 5;
+	}
+	&-lb:after {
+		bottom:-1%;
+		left: 0%;
+		content:'';
+		display:inline-block;
+		position: absolute;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 8rem 0 0 8rem;
+		border-color: transparent transparent transparent black;
+		z-index: 5;
+	}
+	& > * {
+		z-index: 2;
+	}
+}

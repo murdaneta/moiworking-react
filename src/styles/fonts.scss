@@ -1,0 +1,16 @@
+h1,h2,h3,h4,h5,span,p{
+    // font-family: 'Hind Vadodara', sans-serif !important;
+    // font-family: 'Hind Guntur', sans-serif !important;
+    font-family: 'Mukta Malar', sans-serif !important;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: 100;
+    line-height: 1.2;
+}
+.font-9rem{
+    font-size: 9rem;
+    line-height: 1;
+}
+.text-yellow{
+	color: $amarillo;
+}

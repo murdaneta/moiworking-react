@@ -1,0 +1,14 @@
+.bar-top {
+    .dropdown-menu {
+    top: 2.86rem;
+    border: 1px solid rgb(222, 223, 224);
+    border-radius: 0rem;
+    }
+    &.fixed-top {
+        border-bottom: 1px solid #dedfe0;
+        box-shadow: 0px -14px 24px 0px black;
+    }
+    #brand-img{
+        max-width: 120px;
+    }
+}

@@ -1,0 +1,183 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~slick-carousel/slick/slick.css'; 
+@import '~slick-carousel/slick/slick-theme.css';
+@import 'colors';
+@import 'fonts';
+@import 'slick-dots';
+@import 'footer';
+@import 'nav-bar-top';
+@import 'php';
+@import 'triangle';
+@import 'about-me';
+
+img{
+    object-fit: cover;
+}
+body,#root,#container-main,#page404{
+    min-height: 85vh;
+}
+.h-95vh{
+    height: 95vh;
+}
+.parallax-inner{
+    height: 100%;
+    overflow-x: hidden;
+}
+// .parallax-outer{
+//     overflow-x: hidden;
+// }
+.banner-home{
+    & > .row{
+        height: 95vh;
+        position: relative;
+    }
+    height: 95vh;
+    color:white;
+    background: black;
+    padding: 0px 15px;
+}
+.banner-bg{
+    background: rgba(0, 0, 0, 0) 
+    url("/public/assets/img/bg-1.jpg") no-repeat scroll 0% 0% / 100%;
+    height: 95vh;
+    width: 100%;
+    position: absolute;
+    &:before{
+        background-color: rgba(5, 5, 5, 0.85);
+        content: ' ';
+        height: 96vh;
+        position: absolute;
+        width: 100%;
+    }
+}
+.astronaut-png {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 350px;
+    object-fit: cover;
+    object-position: 55px center;
+}
+$phones-width: 0;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+@mixin phones {
+  @media (min-width: #{$phones-width}) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@include tablet {
+    .banner-bg{
+        background-size: auto 100%;
+        background-position: 50% 100%;
+    }
+    // .astronaut-png{
+    //     position: relative;
+    //     width: 45%;
+    // }
+
+}
+@include phones {
+    .banner-bg{
+        background-size: auto 100%;
+        background-position: 50% 10%;
+    }
+    .astronaut-png{
+        position: relative;
+        max-height: 65%;
+        width: 100%;
+        object-fit: cover;
+        object-position: 55px top;
+    }
+}
+
+
+.banner .slick-track > .slick-slide > div{
+    //border-left: 0.1px solid black;
+    border-right: 0.1px solid black;
+}
+.banner{
+    margin-top: -11px;
+    .slick-prev::before, .slick-next::before{
+        color:white;
+    }
+    &.container-fiuld{
+        max-width: 100%;
+    }
+}
+.mt-negative-15{
+    margin-top: -15rem;
+}
+.slick-next {
+    right: 0px;
+}
+.slick-prev {
+    left: 0px;
+}
+.slick-list {
+    left: 0px;
+    width: calc(100% + 0px);
+}
+.slick-initialized,.slick-track{
+    // top: -8px;
+}
+.slick-prev, .slick-next{
+    z-index: 1;
+}
+.slick-dots {
+    bottom: -42px;
+}
+.banner .slick-track {
+    border-bottom: 1px solid #2c2e2f;
+}
+.navbar-light .navbar-toggler {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    border-radius: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+}
+.img-frameworks .img-fluid{
+    max-width: 200px;
+}
+
+@media (max-width: 576px) {
+    .container-fluid{
+        & > .container{
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+    }
+}
+.bg-black{
+    background-color:#050505 !important;
+}
+.text-black{
+    color:#050505 !important;
+}
+.borde-parcial{
+    position:relative;
+    &::before{
+        // content: '';
+        // background: $amarillo;
+        // padding: 27.5px 5px;
+        // position: absolute;
+        // margin-left: -15px;
+    }
+    &::after{
+        content:'';
+        background:#040404;
+        padding: 1px 150px;
+        position:absolute;
+        margin-left: -15px;
+    }
+}
