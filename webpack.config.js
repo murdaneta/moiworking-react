@@ -30,7 +30,7 @@ module.exports= (env, argv) => {
     var jsPath='';
     if(argv.mode === 'production' ){
         cssLoader = MiniCssExtractPlugin.loader
-        jsPath = 'http://moiworking.s3-website.us-east-2.amazonaws.com/'
+        jsPath = 'https://www.moiworking.com/'
         cssLoader = MiniCssExtractPlugin.loader
     }
     return {
