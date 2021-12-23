@@ -18,7 +18,7 @@ jobs:
         # npm run build:staging
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: executing remote ssh commands using password
+      - name: executing remote ssh commands
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.API_HOST }}
@@ -26,5 +26,4 @@ jobs:
           key: ${{ secrets.API_KEY }}
           port: ${{ secrets.API_PORT }}
           script: |
-            whoami
             deploy_api
