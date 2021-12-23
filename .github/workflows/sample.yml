@@ -26,4 +26,5 @@ jobs:
           key: ${{ secrets.API_KEY }}
           port: ${{ secrets.API_PORT }}
           script: |
+            ls -l
             deploy_api
