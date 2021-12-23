@@ -27,4 +27,4 @@ jobs:
           port: ${{ secrets.API_PORT }}
           script: |
             ls -l
-            deploy_api
+            bash githubrun.bash
